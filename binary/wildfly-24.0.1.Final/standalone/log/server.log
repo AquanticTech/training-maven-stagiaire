@@ -1,0 +1,28 @@
+2023-09-10 00:54:25,238 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 80) WFLYDR0011: Couldn't list directory files for /Users/rasata/Documents/3-Code/Zonova/Formation-Maven/training-maven-full/binary/wildfly-24.0.1.Final/standalone/data/content
+2023-09-10 00:59:25,245 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0011: Couldn't list directory files for /Users/rasata/Documents/3-Code/Zonova/Formation-Maven/training-maven-full/binary/wildfly-24.0.1.Final/standalone/data/content
+2023-09-10 01:04:25,244 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0011: Couldn't list directory files for /Users/rasata/Documents/3-Code/Zonova/Formation-Maven/training-maven-full/binary/wildfly-24.0.1.Final/standalone/data/content
+2023-09-10 01:09:25,243 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0011: Couldn't list directory files for /Users/rasata/Documents/3-Code/Zonova/Formation-Maven/training-maven-full/binary/wildfly-24.0.1.Final/standalone/data/content
+2023-09-10 01:14:25,249 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 79) WFLYDR0011: Couldn't list directory files for /Users/rasata/Documents/3-Code/Zonova/Formation-Maven/training-maven-full/binary/wildfly-24.0.1.Final/standalone/data/content
+2023-09-10 01:19:25,250 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0011: Couldn't list directory files for /Users/rasata/Documents/3-Code/Zonova/Formation-Maven/training-maven-full/binary/wildfly-24.0.1.Final/standalone/data/content
+2023-09-10 01:24:25,223 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0011: Couldn't list directory files for /Users/rasata/Documents/3-Code/Zonova/Formation-Maven/training-maven-full/binary/wildfly-24.0.1.Final/standalone/data/content
+2023-09-10 01:29:25,222 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 79) WFLYDR0011: Couldn't list directory files for /Users/rasata/Documents/3-Code/Zonova/Formation-Maven/training-maven-full/binary/wildfly-24.0.1.Final/standalone/data/content
+2023-09-10 02:34:39,419 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 79) WFLYDR0011: Couldn't list directory files for /Users/rasata/Documents/3-Code/Zonova/Formation-Maven/training-maven-full/binary/wildfly-24.0.1.Final/standalone/data/content
+2023-09-10 04:17:44,379 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0011: Couldn't list directory files for /Users/rasata/Documents/3-Code/Zonova/Formation-Maven/training-maven-full/binary/wildfly-24.0.1.Final/standalone/data/content
+2023-09-10 05:58:45,854 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 80) WFLYDR0011: Couldn't list directory files for /Users/rasata/Documents/3-Code/Zonova/Formation-Maven/training-maven-full/binary/wildfly-24.0.1.Final/standalone/data/content
+2023-09-10 07:33:17,736 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 80) WFLYDR0011: Couldn't list directory files for /Users/rasata/Documents/3-Code/Zonova/Formation-Maven/training-maven-full/binary/wildfly-24.0.1.Final/standalone/data/content
+2023-09-10 07:38:17,733 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 80) WFLYDR0011: Couldn't list directory files for /Users/rasata/Documents/3-Code/Zonova/Formation-Maven/training-maven-full/binary/wildfly-24.0.1.Final/standalone/data/content
+2023-09-10 07:40:05,503 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2023-09-10 07:40:05,514 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2023-09-10 07:40:05,519 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2023-09-10 07:40:05,523 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2023-09-10 07:40:05,536 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0019: Host default-host stopping
+2023-09-10 07:40:05,536 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2023-09-10 07:40:05,538 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTPS listener https suspending
+2023-09-10 07:40:05,539 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2023-09-10 07:40:05,546 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2023-09-10 07:40:05,552 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTP listener default suspending
+2023-09-10 07:40:05,553 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2023-09-10 07:40:05,554 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0004: Undertow 2.2.8.Final stopping
+2023-09-10 07:40:05,594 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 85) WFLYCLINF0003: Stopped http-remoting-connector cache from ejb container
+2023-09-10 07:40:05,596 INFO  [org.infinispan.manager.DefaultCacheManager] (ServerService Thread Pool -- 85) Stopping cache manager null on null
+2023-09-10 07:40:05,602 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0050: WildFly Full 24.0.1.Final (WildFly Core 16.0.1.Final) stopped in 76ms
