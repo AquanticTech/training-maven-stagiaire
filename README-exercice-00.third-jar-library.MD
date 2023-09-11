@@ -25,6 +25,8 @@ Dans cet exercice, vous apprendrez à utiliser la librairie `StringUtils` pour m
 2. **Téléchargement de la librairie StringUtils** :
     - Vous pouvez télécharger la librairie `StringUtils` (qui fait partie de Apache Commons Lang) depuis le site officiel d'Apache Commons.
     - Pour cet exercice, supposons que vous ayez téléchargé le fichier `commons-lang3-x.x.x.jar` et l'ayez enregistré dans le répertoire courant.
+    - La page de référence : https://commons.apache.org/proper/commons-lang/download_lang.cgi
+    - Le lien de téléchargement : https://dlcdn.apache.org//commons/lang/binaries/commons-lang3-3.13.0-bin.zip
 
 3. **Compilation du code avec référence à la librairie** :
     - Ouvrez l'invite de commande ou le terminal.
