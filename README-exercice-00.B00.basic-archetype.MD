@@ -41,16 +41,58 @@ Maven permet de générer des projets à partir de template.
 La commande génère un nouveau projet Maven avec le `groupId` `com.example`, le `artifactId` `helloworld`, en utilisant l'archétype `maven-archetype-quickstart`, et le tout sans mode interactif.
 
 ---
-
 ### Step02 : Test  de compilation et génération Jar
 
 Tester la commande suivante : 
 `mvn clean package`
 
-Vous obtenez une erreur, essayez de la résoudre, si vous voulez allé plus loin vous pouvez directement faire 
-`git checkout exercice-01.step03-source-modification`
+####  Vous obtenez une erreur, vous vous souvenez du problème de version de JDK ? 
+Modifier votre *pom.xml* en ajoutant ceci :
+```xml
+   <properties>
+       <maven.compiler.source>1.8</maven.compiler.source>
+       <maven.compiler.target>1.8</maven.compiler.target>
+   </properties>
+```
 
-Cela vous amènera au correctif 
+#### Tentez une exécution 
+`java -jar target/votrejar.jar`
+
+Vous obtenez une erreur, `Problème de manifest, vous vous souvenez ?`
+
+**Ajoutez ou modifiez la configuration du `maven-jar-plugin`** :
+Dans votre `pom.xml`, assurez-vous d'avoir le plugin `maven-jar-plugin` configuré comme suit :
+
+   ```xml
+   <build>
+       <plugins>
+           <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-jar-plugin</artifactId>
+               <version>3.2.0</version>
+               <configuration>
+                   <archive>
+                       <manifest>
+                           <addClasspath>true</addClasspath>
+                           <classpathPrefix>lib/</classpathPrefix>
+                           <mainClass>com.example.App</mainClass>
+                       </manifest>
+                   </archive>
+               </configuration>
+           </plugin>
+       </plugins>
+   </build>
+   ```
+Remarque : Remplacez `com.example.HelloWorld` par le nom complet de votre classe principale, y compris le nom du package.
+
+2. **Reconstruisez le projet** :
+   Après avoir ajouté ou modifié la configuration ci-dessus, reconstruisez votre projet avec la commande :
+
+   ```bash
+   mvn clean package
+   ```
+
+   Une fois la construction terminée, vous devriez pouvoir exécuter votre JAR sans rencontrer l'erreur `no main manifest attribute`.
 
 ----
 ### Step03 : Lancement du Jar 
@@ -63,7 +105,8 @@ Vous obtenez quelque chose comme :
 
 Mais d'où cela vient-il ? 
 
-
+Cela vient du problème de manifest qui ne spécifie pas de classe principale car dans le pom.xml ce n'est pas spécifié.
+Vous pouvez donc réaliser la modification suivante :
 ----
 #### Step04 : Liste les archétypes Maven disponibles 
 
