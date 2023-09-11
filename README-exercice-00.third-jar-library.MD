@@ -32,14 +32,14 @@ Dans cet exercice, vous apprendrez à utiliser la librairie `StringUtils` pour m
     - Ouvrez l'invite de commande ou le terminal.
     - Compilez le fichier `HelloWorld.java` en faisant référence à la librairie :
       ```bash
-      javac -cp commons-lang3-3.9.jar HelloWorld.java
+      javac -cp commons-lang3-3.13.0.jar HelloWorld.java
       ```
 
 4. **Génération du fichier JAR intégrant la librairie** :
     - Créez un manifeste personnalisé nommé `custom-manifest.txt` avec le contenu suivant :
       ```
       Main-Class: HelloWorld
-      Class-Path: commons-lang3-3.9.jar
+      Class-Path: commons-lang3-3.13.0.jar
       ```
       Assurez-vous d'ajouter une nouvelle ligne à la fin.
     - Générez le fichier JAR :
