@@ -1,0 +1,17 @@
+# Définir le comportement par défaut pour tous les fichiers
+* text=auto
+
+# Fichiers binaires explicites
+*.png binary
+*.jpg binary
+*.tiff binary
+*.gif binary
+
+# Fichiers spécifiques avec fin de ligne LF (Linux/macOS)
+*.sh text eol=lf
+
+# Fichiers spécifiques avec fin de ligne CRLF (Windows)
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+* -text

@@ -1,0 +1,58 @@
+# Fichiers compilés
+*.class
+
+# Fichiers de package
+*.jar
+!exercice*/**/*.jar
+# `*.jar` : Cette règle ignore tous les fichiers `.jar` dans le dépôt.
+# - `!exercice*/*.jar` : Cette règle annule l'ignorance précédente pour les fichiers `.jar` qui se trouvent dans n'importe quel sous-répertoire de répertoires commençant par `exercice`. Le `**` permet de cibler n'importe quel niveau de sous-répertoire.
+
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Fichiers de log
+*.log
+
+# Répertoire de build
+target/
+build/
+out/
+
+# Autres fichiers/dossiers ignorés
+*.bak
+*.swp
+*.back
+*.merge
+*.patch
+*.orig
+*.rej
+*.temp
+*.tmp
+*.~*
+
+# Fichiers spécifiques à l'IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+*.ids
+*.dat
+*.dat.*
+*.pydevproject
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-project
+*.sublime-workspace
+*.tmproj
+nbproject/
+nb-configuration.xml
+
+# Fichiers OS
+.DS_Store
+Thumbs.db
