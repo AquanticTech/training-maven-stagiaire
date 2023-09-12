@@ -46,7 +46,6 @@ Créer un répertoire restService qui contient le fichier `pom.xml` suivant
         </plugins>
     </build>
 </project>
-
 ```
 
 ### Créer l'application

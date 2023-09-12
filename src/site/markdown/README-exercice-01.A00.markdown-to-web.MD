@@ -47,3 +47,7 @@ Après l'exécution de cette commande, vous trouverez le site généré dans le 
 ## 5. Visualiser le site
 
 Ouvrez le fichier `target/site/index.html` dans votre navigateur pour visualiser le site généré.
+
+
+## 6. Personalisation
+- La référence est par ici : https://github.com/walokra/markdown-page-generator-plugin
