@@ -3,7 +3,7 @@
 ####  🚎 Objectifs
 
 L'objectif est d'utiliser les archetypes de Maven pour explorer les possibilités offertes par Maven.
-Nous partons ici de l'archetype  :
+Nous partons ici de l'archetype :
 
 ⦿ **org.apache.maven.archetypes:maven-archetype-j2ee-simple**
 
