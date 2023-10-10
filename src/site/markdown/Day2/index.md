@@ -1,5 +1,27 @@
 # Table des matières
 
+## [index](index.html)
+
+- [Table des matières](index.html#Table-des-matières)
+    - [[README-exercice-01.A05.assembly-ear](README-exercice-01.A05.assembly-ear.html)](index.html#[README-exercice-01.A05.assembly-ear](README-exercice-01.A05.assembly-ear.html))
+    - [[README-exercice-01.A04.transitivité-dépendances](README-exercice-01.A04.transitivité-dépendances.html)](index.html#[README-exercice-01.A04.transitivité-dépendances](README-exercice-01.A04.transitivité-dépendances.html))
+    - [[README-exercice-01.A05.projet-parent](README-exercice-01.A05.projet-parent.html)](index.html#[README-exercice-01.A05.projet-parent](README-exercice-01.A05.projet-parent.html))
+    - [[README-exercice-01.A01.helloworld-repository](README-exercice-01.A01.helloworld-repository.html)](index.html#[README-exercice-01.A01.helloworld-repository](README-exercice-01.A01.helloworld-repository.html))
+    - [[README-exercice-01.A06.assembly-plugin](README-exercice-01.A06.assembly-plugin.html)](index.html#[README-exercice-01.A06.assembly-plugin](README-exercice-01.A06.assembly-plugin.html))
+    - [[README-exercice-01.A02.scope-dependance](README-exercice-01.A02.scope-dependance.html)](index.html#[README-exercice-01.A02.scope-dependance](README-exercice-01.A02.scope-dependance.html))
+
+
+
+## [README-exercice-01.A00.markdown-to-web](README-exercice-01.A00.markdown-to-web.html)
+
+- [Transformer un répertoire Markdown en site Maven](README-exercice-01.A00.markdown-to-web.html#Transformer-un-répertoire-Markdown-en-site-Maven)
+  - [1. Ajouter le plugin Maven Site](README-exercice-01.A00.markdown-to-web.html#1.-Ajouter-le-plugin-Maven-Site)
+  - [2. Ajouter le plugin Markdown](README-exercice-01.A00.markdown-to-web.html#2.-Ajouter-le-plugin-Markdown)
+  - [3. Configuration](README-exercice-01.A00.markdown-to-web.html#3.-Configuration)
+  - [4. Générer le site](README-exercice-01.A00.markdown-to-web.html#4.-Générer-le-site)
+  - [5. Visualiser le site](README-exercice-01.A00.markdown-to-web.html#5.-Visualiser-le-site)
+  - [6. Personalisation](README-exercice-01.A00.markdown-to-web.html#6.-Personalisation)
+
 ## [README-exercice-01.A05.assembly-ear](README-exercice-01.A05.assembly-ear.html)
 
 - [Exercice Maven : Construire un Assembly de type EAR](README-exercice-01.A05.assembly-ear.html#Exercice-Maven-:-Construire-un-Assembly-de-type-EAR)
@@ -41,6 +63,20 @@
     - [5. Configuration du Settings.xml](README-exercice-01.A01.helloworld-repository.html#5.-Configuration-du-Settings.xml)
     - [6. Configuration des accès aux repository](README-exercice-01.A01.helloworld-repository.html#6.-Configuration-des-accès-aux-repository)
 
+## [README-exercice-01-A07.profile](README-exercice-01-A07.profile.html)
+
+- [Utilisation des profils](README-exercice-01-A07.profile.html#Utilisation-des-profils)
+  - [Utilisations courantes des profils Maven](README-exercice-01-A07.profile.html#Utilisations-courantes-des-profils-Maven)
+- [Exercice sur l'utilisation des Profils Maven](README-exercice-01-A07.profile.html#Exercice-sur-l'utilisation-des-Profils-Maven)
+- [Objectif de l'exercice](README-exercice-01-A07.profile.html#Objectif-de-l'exercice)
+  - [Prérequis](README-exercice-01-A07.profile.html#Prérequis)
+  - [Etape 0 : Créer un projet maven simple](README-exercice-01-A07.profile.html#Etape-0-:-Créer-un-projet-maven-simple)
+  - [Étape 1 : Configuration du fichier `pom.xml`](README-exercice-01-A07.profile.html#Étape-1-:-Configuration-du-fichier-`pom.xml`)
+  - [Étape 2 : Création de profils Maven](README-exercice-01-A07.profile.html#Étape-2-:-Création-de-profils-Maven)
+  - [Étape 3 : Génération du site avec les profils](README-exercice-01-A07.profile.html#Étape-3-:-Génération-du-site-avec-les-profils)
+  - [Étape 4 : Vérification des résultats](README-exercice-01-A07.profile.html#Étape-4-:-Vérification-des-résultats)
+  - [Conclusion](README-exercice-01-A07.profile.html#Conclusion)
+
 ## [README-exercice-01.A06.assembly-plugin](README-exercice-01.A06.assembly-plugin.html)
 
 - [Exercice Maven : Construire un Assembly avec le plugin `maven-assembly-plugin`](README-exercice-01.A06.assembly-plugin.html#Exercice-Maven-:-Construire-un-Assembly-avec-le-plugin-`maven-assembly-plugin`)
@@ -53,6 +89,37 @@
     - [4. Configuration du plugin `maven-assembly-plugin`](README-exercice-01.A06.assembly-plugin.html#4.-Configuration-du-plugin-`maven-assembly-plugin`)
     - [5. Mise à jour du descripteur d'assembly](README-exercice-01.A06.assembly-plugin.html#5.-Mise-à-jour-du-descripteur-d'assembly)
     - [6. Construction de l'assembly](README-exercice-01.A06.assembly-plugin.html#6.-Construction-de-l'assembly)
+
+## [README-exercice-01.A03.RestService](README-exercice-01.A03.RestService.html)
+
+  - [🚀 Création d'un module REST Hello World](README-exercice-01.A03.RestService.html#🚀-Création-d'un-module-REST-Hello-World)
+    - [Création et initialisation du service](README-exercice-01.A03.RestService.html#Création-et-initialisation-du-service)
+    - [Créer l'application](README-exercice-01.A03.RestService.html#Créer-l'application)
+    - [Créer le contrôleur Springboot qui va renvoyer Hello World](README-exercice-01.A03.RestService.html#Créer-le-contrôleur-Springboot-qui-va-renvoyer-Hello-World)
+    - [Lancement de l'application springBoot](README-exercice-01.A03.RestService.html#Lancement-de-l'application-springBoot)
+    - [Formatage pour que cela renvoie un objet exploitable par GraphQL ou en Json](README-exercice-01.A03.RestService.html#Formatage-pour-que-cela-renvoie-un-objet-exploitable-par-GraphQL-ou-en-Json)
+    - [Structuration pour contextualiser et ajouter du multi-langue](README-exercice-01.A03.RestService.html#Structuration-pour-contextualiser-et-ajouter-du-multi-langue)
+    - [Ajout d'une route qui permet de récupérer des éléments en fonction de la langue](README-exercice-01.A03.RestService.html#Ajout-d'une-route-qui-permet-de-récupérer-des-éléments-en-fonction-de-la-langue)
+    - [Ajout d'une dépendance qui permet d'exposer une route Swagger de l'API REST](README-exercice-01.A03.RestService.html#Ajout-d'une-dépendance-qui-permet-d'exposer-une-route-Swagger-de-l'API-REST)
+    - [2. Configurer Swagger](README-exercice-01.A03.RestService.html#2.-Configurer-Swagger)
+    - [3. Lancer votre application Spring Boot](README-exercice-01.A03.RestService.html#3.-Lancer-votre-application-Spring-Boot)
+    - [4. Accéder à l'interface Swagger UI](README-exercice-01.A03.RestService.html#4.-Accéder-à-l'interface-Swagger-UI)
+  - [Ajout d'une Route pour Afficher les Options](README-exercice-01.A03.RestService.html#Ajout-d'une-Route-pour-Afficher-les-Options)
+    - [1. Mise à jour du contrôleur `HelloController.java` :](README-exercice-01.A03.RestService.html#1.-Mise-à-jour-du-contrôleur-`HelloController.java`-:)
+    - [2. Explication :](README-exercice-01.A03.RestService.html#2.-Explication-:)
+    - [3. Utilisation :](README-exercice-01.A03.RestService.html#3.-Utilisation-:)
+  - [🚀 Création d'un module Maven pour afficher le contenu du service REST](README-exercice-01.A03.RestService.html#🚀-Création-d'un-module-Maven-pour-afficher-le-contenu-du-service-REST)
+    - [1. Initialisation du module Maven](README-exercice-01.A03.RestService.html#1.-Initialisation-du-module-Maven)
+    - [2. Ajout des dépendances](README-exercice-01.A03.RestService.html#2.-Ajout-des-dépendances)
+    - [3. Configuration de Spring Boot](README-exercice-01.A03.RestService.html#3.-Configuration-de-Spring-Boot)
+    - [4. Création de la page JSP](README-exercice-01.A03.RestService.html#4.-Création-de-la-page-JSP)
+    - [5. Contrôleur Spring Boot](README-exercice-01.A03.RestService.html#5.-Contrôleur-Spring-Boot)
+    - [6. Configuration des vues](README-exercice-01.A03.RestService.html#6.-Configuration-des-vues)
+    - [7. Exécution](README-exercice-01.A03.RestService.html#7.-Exécution)
+  - [Génération de fichiers `.jar` et `.war` pour votre application Spring Boot](README-exercice-01.A03.RestService.html#Génération-de-fichiers-`.jar`-et-`.war`-pour-votre-application-Spring-Boot)
+    - [1. Mise à jour du fichier `pom.xml`](README-exercice-01.A03.RestService.html#1.-Mise-à-jour-du-fichier-`pom.xml`)
+    - [2. Génération des fichiers](README-exercice-01.A03.RestService.html#2.-Génération-des-fichiers)
+    - [3. Exécution](README-exercice-01.A03.RestService.html#3.-Exécution)
 
 ## [README-exercice-01.A02.scope-dependance](README-exercice-01.A02.scope-dependance.html)
 

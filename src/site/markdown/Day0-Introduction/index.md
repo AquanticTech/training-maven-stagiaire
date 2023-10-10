@@ -1,11 +1,12 @@
 # Table des matières
-## [Table des matières](index.html)
 
-- [Table des matières](TOC.html#Table-des-matières)
-    - [[README-cours.01.A00.basic-convention-maven](README-cours.01.A00.basic-convention-maven.html)](TOC.html#[README-cours.01.A00.basic-convention-maven](README-cours.01.A00.basic-convention-maven.html))
-    - [[README-cours.01.A00.plugin-convention](README-cours.01.A00.plugin-convention.html)](TOC.html#[README-cours.01.A00.plugin-convention](README-cours.01.A00.plugin-convention.html))
-    - [[TOC](TOC.html)](TOC.html#[TOC](TOC.html))
-    - [[README-cours.01.A00.projet-maven-multi-module](README-cours.01.A00.projet-maven-multi-module.html)](TOC.html#[README-cours.01.A00.projet-maven-multi-module](README-cours.01.A00.projet-maven-multi-module.html))
+## [index](index.html)
+
+- [Table des matières](index.html#Table-des-matières)
+    - [[Table des matières](index.html)](index.html#[Table-des-matières](index.html))
+    - [[README-cours.01.A00.basic-convention-maven](README-cours.01.A00.basic-convention-maven.html)](index.html#[README-cours.01.A00.basic-convention-maven](README-cours.01.A00.basic-convention-maven.html))
+    - [[README-cours.01.A00.plugin-convention](README-cours.01.A00.plugin-convention.html)](index.html#[README-cours.01.A00.plugin-convention](README-cours.01.A00.plugin-convention.html))
+    - [[README-cours.01.A00.projet-maven-multi-module](README-cours.01.A00.projet-maven-multi-module.html)](index.html#[README-cours.01.A00.projet-maven-multi-module](README-cours.01.A00.projet-maven-multi-module.html))
 
 ## [README-cours.01.A00.basic-convention-maven](README-cours.01.A00.basic-convention-maven.html)
 
@@ -33,7 +34,7 @@
     - [3. **runtime**](README-cours.01.A00.plugin-convention.html#3.-**runtime**)
     - [4. **test**](README-cours.01.A00.plugin-convention.html#4.-**test**)
     - [5. **system**](README-cours.01.A00.plugin-convention.html#5.-**system**)
-    - [6. **import**](README-cours.01.A00.plugin-convention.html#6.-**import**)
+    - [6. **import**](README-cours.01.A00.plugin-convention.html#6.-**import**) 
 
 ## [README-cours.01.A00.projet-maven-multi-module](README-cours.01.A00.projet-maven-multi-module.html)
 
