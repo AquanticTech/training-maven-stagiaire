@@ -58,8 +58,7 @@ Votre mission est de créer un package RPM pour une application Java simple. Cet
      echo "Merci d'avoir installé hello-rpm !"
 
      %changelog
-     * Date VotreNom - 1.0-1
-     - Première version de hello-rpm
+     # let's skip this from the moment
      ```
 
 5. **Création du package RPM** :

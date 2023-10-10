@@ -20,6 +20,7 @@
 target/
 build/
 out/
+testing/
 
 # Autres fichiers/dossiers ignorés
 *.bak

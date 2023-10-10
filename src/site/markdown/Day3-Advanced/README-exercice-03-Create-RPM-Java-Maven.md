@@ -6,7 +6,29 @@ Votre mission est de créer un package RPM pour une application Java simple util
 
 ## Instructions
 
-1. **Préparation de l'environnement** :
+0. **Lancer un conteneur en ligne de commande avec Centos:7**
+  - Créer un fichier `Dockerfile` suivant :
+```dockerfile
+From centos:7
+RUN curl -sL https://github.com/shyiko/jabba/raw/master/install.sh | \
+    JABBA_COMMAND="install 1.17.0 -o /jdk" bash
+RUN echo "enabled=0" >> /etc/yum/pluginconf.d/subscription-manager.conf
+RUN yum install -y rpm-build rpmdevtools maven
+RUN rpmdev-setuptree
+CMD ["/bin/bash"]
+```
+  - Construire l'image docker avec la commande suivante :
+```bash
+    docker build -t rhel7-rpm .
+```
+
+  - Lancer l'image docker avec la commande suivante :
+```bash
+    docker run -it --name rhel7-rpm -v /home/$(whoami)/rpmbuild:/root/rpmbuild rhel7-rpm 
+ ```
+
+
+1. **Préparation de l'environnement si une machine virtuelle** :
    - Installez les outils nécessaires pour la création de packages RPM et Maven. Sur une distribution basée sur Red Hat, vous pouvez utiliser les commandes suivantes :
      ```
      sudo yum install rpm-build rpmdevtools maven
@@ -31,6 +53,29 @@ Votre mission est de créer un package RPM pour une application Java simple util
          }
      }
      ```
+     
+  - Attention, souvenez-vous qu'il faut modifier le fichier pom.xml et ajouter le plugin de génération du jar de la façon suivante : 
+  ```xml
+        <build>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>3.2.0</version>
+                    <configuration>
+                        <archive>
+                            <manifest>
+                                <addClasspath>true</addClasspath>
+                                <classpathPrefix>lib/</classpathPrefix>
+                                <mainClass>com.votrepackage.VotreClassePrincipale</mainClass>
+                            </manifest>
+                        </archive>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </build>
+  ```
+ 
    - Compilez et packagez l'application avec Maven :
      ```
      mvn clean package
@@ -46,7 +91,7 @@ Votre mission est de créer un package RPM pour une application Java simple util
 
      License: GPLv3+
      URL: http://example.com/hello-rpm
-     Source0: hello-rpm-1.0.jar
+     Source0:  hello-rpm-1.0-SNAPSHOT.jar
 
      %description
      Une application Java simple qui affiche "Bonjour, RPM !" et est packagée avec Maven.
@@ -56,14 +101,15 @@ Votre mission est de créer un package RPM pour une application Java simple util
      cp %{SOURCE0} %{buildroot}/opt/hello-rpm
 
      %files
-     /opt/hello-rpm/hello-rpm-1.0.jar
+     /opt/hello-rpm/hello-rpm-1.0-SNAPSHOT.jar
+
 
      %post
      echo "Merci d'avoir installé hello-rpm !"
 
      %changelog
-     * Date VotreNom - 1.0-1
-     - Première version de hello-rpm avec Maven
+     # let's skip this for now lol
+
      ```
 
 5. **Création du package RPM** :
