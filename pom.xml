@@ -39,4 +39,10 @@
             </plugin>
         </plugins>
     </build>
+    <scm>
+        <connection>scm:git:git://github.com/AquanticTech/training-maven-stagiaire.git</connection>
+        <developerConnection>scm:git:ssh://github.com/AquanticTech/training-maven-stagiaire.git</developerConnection>
+        <url>https://github.com/AquanticTech/training-maven-stagiaire.git</url>
+        <tag>HEAD</tag>
+    </scm>
 </project>
