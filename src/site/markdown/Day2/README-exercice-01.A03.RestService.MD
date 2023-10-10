@@ -3,6 +3,7 @@
 ### Création et initialisation du service
 
 Créer un répertoire restService qui contient le fichier `pom.xml` suivant
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -71,7 +72,7 @@ Avec ce code, une fois que vous démarrez l'application, vous pouvez accéder à
 `http://localhost:8080/hello` pour voir le message "Hello World.
 
 N'oubliez pas d'ajouter ce module à votre projet Maven parent pour qu'il soit reconnu comme un sous-module.
-Vous pouvez le faire en ajoutant une section <modules> dans le pom.xml de votre projet parent et en y listant le nom de l'artifactId de ce module.
+Vous pouvez le faire en ajoutant une section `<modules>` dans le pom.xml de votre projet parent et en y listant le nom de l'artifactId de ce module.
 
 
 ```java
@@ -522,13 +523,13 @@ La nouvelle route `/options` renvoie un objet JSON où chaque clé est une langu
 chaque valeur est une liste des situations disponibles pour cette langue. Par exemple, le résultat pourrait ressembler
 à ceci :
 
-\```json
+```json
 {
 "French": ["Formal", "Informal"],
 "Spanish": ["Formal", "Informal"],
 "Japanese": ["Formal", "Informal"]
 }
-\```
+```
 
 ### 3. Utilisation :
 

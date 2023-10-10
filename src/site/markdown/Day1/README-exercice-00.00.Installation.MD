@@ -244,7 +244,7 @@ Créez un fichier nommé `Dockerfile` dans le répertoire racine de votre projet
 ```Dockerfile
 FROM maven:3.6-jdk-11
 WORKDIR /app
-COPY ../../.. /app
+COPY ../../../.. /app
 CMD ["mvn", "clean", "install"]
 ```
 

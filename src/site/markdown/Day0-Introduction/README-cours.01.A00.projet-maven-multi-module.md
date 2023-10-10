@@ -1,9 +1,10 @@
 ## Conventions Maven pour les Projets Multi-modules
 
 ### 1. Structure du Répertoire
-Un projet multi-modules a généralement une structure de répertoire parent-enfant. Le projet parent contient un fichier `pom.xml` qui liste tous les modules (sous-projets) dans la section `<modules>`.
 
-```plaintext
+Un projet multi-modules a généralement une structure de répertoire parent-enfant. Le projet parent contient un fichier `pom.xml`  qui liste tous les modules (sous-projets) dans la section `<modules>`.
+
+```
 mon-projet-parent/
 |-- pom.xml
 |-- module1/
@@ -15,14 +16,15 @@ mon-projet-parent/
 ```
 
 ### 2. POM Parent
-Le POM parent (fichier pom.xml à la racine) contient une section <modules> qui liste tous les sous-modules.
 
-xml
-Copy code
+Le POM parent (fichier pom.xml à la racine) contient une section `<modules>` qui liste tous les sous-modules.
+
+```
 <modules>
     <module>module1</module>
     <module>module2</module>
 </modules>
+```
 
 Il peut également définir des dépendances, des propriétés et des plugins communs pour tous les sous-modules.
 
@@ -30,15 +32,16 @@ Il peut également définir des dépendances, des propriétés et des plugins co
 
 Chaque sous-module a son propre `pom.xml`. Le POM du sous-module hérite du POM parent en spécifiant le groupId, l'artifactId et la version du parent dans la section `<parent>`.
 
-```xml
+```
 <parent>
-    <groupId>com.exemple</groupId>
+<groupId>com.exemple</groupId>
     <artifactId>mon-projet-parent</artifactId>
     <version>1.0.0</version>
-</parent>
+    </parent>
 ```
 
 ## **4. Dépendances entre les Sous-modules**
+
 Les sous-modules peuvent avoir des dépendances les uns envers les autres. 
 Par exemple, si `module2` dépend de `module1`, cela serait spécifié dans le fichier `pom.xml` de `module2`,
 dans la section `<dependencies>`.

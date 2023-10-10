@@ -1,3 +1,11 @@
+## Table of Contents
+- [Conventions Maven](#conventions-maven)
+  * [1. Le code source](#1-le-code-source)
+  * [2. Le code de tests](#2-le-code-de-tests)
+  * [3. L'utilisation de plugin](#3-lutilisation-de-plugin)
+  * [4. L'utilisation et la configuration de sécurité](#4-lutilisation-et-la-configuration-de-securite)
+  * [5. Informations de chemin par défaut et autres](#5-informations-de-chemin-par-defaut-et-autres)
+
 ## Conventions Maven
 
 ### 1. Le code source
