@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.aquantictech</groupId>
     <artifactId>training-maven-stagiaire</artifactId>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Training pour les stagiaires de la formations maven, exercice en complément du cours.</name>
     <distributionManagement>
@@ -72,8 +72,8 @@
         </plugins>
     </build>
     <scm>
-        <connection>scm:git:git@github.com:AquanticTech/training-maven-stagiaire.git</connection>
-        <developerConnection>scm:git:git@github.com:AquanticTech/training-maven-stagiaire.git</developerConnection>
+        <connection>scm:git:git://github.com/AquanticTech/training-maven-stagiaire.git</connection>
+        <developerConnection>scm:git:ssh://github.com/AquanticTech/training-maven-stagiaire.git</developerConnection>
         <url>https://github.com/AquanticTech/training-maven-stagiaire.git</url>
         <tag>training-maven-stagiaire-1.0</tag>
     </scm>
