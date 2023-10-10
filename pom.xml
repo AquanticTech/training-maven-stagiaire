@@ -60,11 +60,20 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <localCheckout>true</localCheckout>
+                    <pushChanges>false</pushChanges>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
     <scm>
-        <connection>scm:git:git://github.com/AquanticTech/training-maven-stagiaire.git</connection>
-        <developerConnection>scm:git:ssh://github.com/AquanticTech/training-maven-stagiaire.git</developerConnection>
+        <connection>scm:git:git@github.com:AquanticTech/training-maven-stagiaire.git</connection>
+        <developerConnection>scm:git:git@github.com:AquanticTech/training-maven-stagiaire.git</developerConnection>
         <url>https://github.com/AquanticTech/training-maven-stagiaire.git</url>
         <tag>training-maven-stagiaire-1.0</tag>
     </scm>
