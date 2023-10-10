@@ -10,7 +10,7 @@
         <repository>
             <id>github</id>
             <name>GitHub OWNER Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/AquanticTech/training-maven-stagiaire.git</url>
+            <url>https://maven.pkg.github.com/AquanticTech/training-maven-stagiaire</url>
         </repository>
     </distributionManagement>
     <properties>
