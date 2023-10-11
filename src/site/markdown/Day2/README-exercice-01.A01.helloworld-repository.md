@@ -141,6 +141,10 @@ Assurez-vous d'avoir les informations d'identification pour Nexus dans votre fic
 Dans le fichier settings situé à ~/.m2/settings.xml,
 ajouter les informations de connexion au serveur.
 ```xml
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
 <servers>
     <server>
         <id>nexus-snapshots</id>
@@ -153,6 +157,7 @@ ajouter les informations de connexion au serveur.
         <password>password</password>
     </server>
 </servers>
+</settings>
 ```
 **Note** : Pour des raisons de sécurité, il est recommandé de chiffrer les mots de passe dans le fichier `settings.xml` en utilisant le cryptage Maven. Assurez-vous également de ne pas exposer le fichier `settings.xml` contenant des mots de passe en clair.
 
