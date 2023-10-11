@@ -19,12 +19,12 @@ CMD ["/bin/bash"]
 ```
   - Construire l'image docker avec la commande suivante :
 ```bash
-    docker build -t rhel7-rpm .
+    docker build -t centos:7 .
 ```
 
   - Lancer l'image docker avec la commande suivante :
 ```bash
-    docker run -it --name rhel7-rpm -v /home/$(whoami)/rpmbuild:/root/rpmbuild rhel7-rpm 
+    docker run -it --name rhel7-rpm -v /home/$(whoami)/rpmbuild:/root/rpmbuild centos:7 /bin/bash 
  ```
 
 
