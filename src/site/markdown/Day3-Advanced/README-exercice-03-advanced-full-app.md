@@ -62,9 +62,6 @@ Ajoutez la configuration suivante dans la section `<plugins>` de votre `pom.xml`
         <group>Application/Internet</group>
         <description>Spring PetClinic with HTMX</description>
         <targetOS>linux</targetOS>
-        <requires>
-            <require>java >= 1.8</require>
-        </requires>
         <mappings>
             <mapping>
                 <directory>/opt/spring-petclinic-htmx</directory>
