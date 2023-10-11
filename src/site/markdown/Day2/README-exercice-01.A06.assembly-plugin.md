@@ -25,6 +25,10 @@ Ajoutez deux modules : un module `moduleA` et un module `moduleB`.
    ```bash
    mvn archetype:generate -DgroupId=com.formation -DartifactId=moduleA -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
    ```
+
+(i) vous allez avoir une belle erreur :  assembly-project: Unable to add module to the current project as it is not of packaging type 'pom' -> [Help 1]
+momdifier le fichier pom.xml du projet parent et ajouter la balise packaging avec la valeur pom
+
 3. Créez le module `moduleB` :
    ```bash
    mvn archetype:generate -DgroupId=com.formation -DartifactId=moduleB -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
@@ -99,6 +103,9 @@ Dans le répertoire `src/main/assembly`, mettez à jour le fichier `assembly.xml
     </fileSets>
 </assembly>
 ```
+
+### 5.1 Créer les ressources dans les répertoires des modules 
+
 
 ### 6. Construction de l'assembly
 
